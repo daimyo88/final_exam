@@ -45,7 +45,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('img', function () {
-  return gulp.src('dev/img/**/*') // Берем все изображения из dev
+  return gulp.src('prod/img/**/*') // Берем все изображения из dev
     .pipe(cache(imagemin({ // Сжимаем их с наилучшими настройками
       interlaced: true,
       progressive: true,
