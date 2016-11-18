@@ -1,0 +1,138 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$arrow-left-name: 'arrow_left'
+$arrow-left-x: 82px
+$arrow-left-y: 0px
+$arrow-left-offset-x: -82px
+$arrow-left-offset-y: 0px
+$arrow-left-width: 30px
+$arrow-left-height: 55px
+$arrow-left-total-width: 142px
+$arrow-left-total-height: 82px
+$arrow-left-image: 'icons.png'
+$arrow-left: (82px, 0px, -82px, 0px, 30px, 55px, 142px, 82px, 'icons.png', 'arrow_left', )
+$arrow-right-name: 'arrow_right'
+$arrow-right-x: 112px
+$arrow-right-y: 0px
+$arrow-right-offset-x: -112px
+$arrow-right-offset-y: 0px
+$arrow-right-width: 30px
+$arrow-right-height: 55px
+$arrow-right-total-width: 142px
+$arrow-right-total-height: 82px
+$arrow-right-image: 'icons.png'
+$arrow-right: (112px, 0px, -112px, 0px, 30px, 55px, 142px, 82px, 'icons.png', 'arrow_right', )
+$partner-sub1-name: 'partner_sub1'
+$partner-sub1-x: 0px
+$partner-sub1-y: 0px
+$partner-sub1-offset-x: 0px
+$partner-sub1-offset-y: 0px
+$partner-sub1-width: 41px
+$partner-sub1-height: 41px
+$partner-sub1-total-width: 142px
+$partner-sub1-total-height: 82px
+$partner-sub1-image: 'icons.png'
+$partner-sub1: (0px, 0px, 0px, 0px, 41px, 41px, 142px, 82px, 'icons.png', 'partner_sub1', )
+$partner-sub2-name: 'partner_sub2'
+$partner-sub2-x: 41px
+$partner-sub2-y: 41px
+$partner-sub2-offset-x: -41px
+$partner-sub2-offset-y: -41px
+$partner-sub2-width: 41px
+$partner-sub2-height: 40px
+$partner-sub2-total-width: 142px
+$partner-sub2-total-height: 82px
+$partner-sub2-image: 'icons.png'
+$partner-sub2: (41px, 41px, -41px, -41px, 41px, 40px, 142px, 82px, 'icons.png', 'partner_sub2', )
+$partner-sub3-name: 'partner_sub3'
+$partner-sub3-x: 41px
+$partner-sub3-y: 0px
+$partner-sub3-offset-x: -41px
+$partner-sub3-offset-y: 0px
+$partner-sub3-width: 41px
+$partner-sub3-height: 41px
+$partner-sub3-total-width: 142px
+$partner-sub3-total-height: 82px
+$partner-sub3-image: 'icons.png'
+$partner-sub3: (41px, 0px, -41px, 0px, 41px, 41px, 142px, 82px, 'icons.png', 'partner_sub3', )
+$partner-sub4-name: 'partner_sub4'
+$partner-sub4-x: 0px
+$partner-sub4-y: 41px
+$partner-sub4-offset-x: 0px
+$partner-sub4-offset-y: -41px
+$partner-sub4-width: 41px
+$partner-sub4-height: 41px
+$partner-sub4-total-width: 142px
+$partner-sub4-total-height: 82px
+$partner-sub4-image: 'icons.png'
+$partner-sub4: (0px, 41px, 0px, -41px, 41px, 41px, 142px, 82px, 'icons.png', 'partner_sub4', )
+$spritesheet-width: 142px
+$spritesheet-height: 82px
+$spritesheet-image: 'icons.png'
+$spritesheet-sprites: ($arrow-left, $arrow-right, $partner-sub1, $partner-sub2, $partner-sub3, $partner-sub4, )
+$spritesheet: (142px, 82px, 'icons.png', $spritesheet-sprites, )
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+    // CSS
+    .icon {
+      display: inline-block;
+    }
+
+    // HTML
+    <i class="icon icon-home"></i>
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../img/icons.png)
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

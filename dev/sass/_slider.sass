@@ -1,0 +1,72 @@
+.lSSlideOuter
+  width: 100%
+  max-width: 340px
+  margin: 0 auto 10px
+  overflow: hidden
+  @media screen and (min-width: 620px)
+    width: 32%
+    float: left
+
+.lSSlideOuter:last-child
+  @media screen and (min-width: 620px)
+    margin-right: 0
+
+.slider__item
+  position: relative
+  color: #fff
+  text-align: left
+  img
+    width: 100%
+    @media screen and (max-width: 620px)
+      height: 340px
+
+.slider__content
+  position: absolute
+  bottom: 0
+  padding: 17px 20px
+  z-index: 1
+
+
+.slider__content--mark, .slider__content--text
+  font-family: 'roboto light'
+
+.slider__content--mark
+  display: inline-block
+  padding: 6px 12px
+  border-radius: 15px
+  behavior: url("css/pie.htc")
+  background: $bright-main
+  font-size: 10px
+
+.slider__content--title
+  font-size: 24px
+
+.slider__content--text
+  font-size: 14px
+
+.lSAction > a
+  position: absolute
+  width: 30px
+  height: 55px
+  cursor: pointer
+  @media screen and (min-width: 678px)
+    top: 40px
+  @media screen and (min-width: 960px)
+    top: 46%
+    top: calc(50% - 30px)
+
+.lSAction > .lSPrev
+  left: 20px
+  @include sprite($arrow_left)
+
+.lSAction > .lSNext
+  right: 20px
+  @include sprite($arrow_right)
+
+.slider__gag
+  display: none
+  @media screen and (min-width: 620px)
+    display: block
+    width: 2%
+    height: 1px
+    float: left

@@ -1,0 +1,666 @@
+@font-face {
+  font-family: 'montserrat bold';
+  src: url("../fonts/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat regular';
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto black';
+  src: url("../fonts/roboto-black-webfont.eot");
+  src: url("../fonts/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoblack italic';
+  src: url("../fonts/roboto-blackitalic-webfont.eot");
+  src: url("../fonts/roboto-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-blackitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto bold';
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto bold italic';
+  src: url("../fonts/roboto-bolditalic-webfont.eot");
+  src: url("../fonts/roboto-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"), url("../fonts/roboto-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto italic';
+  src: url("../fonts/roboto-italic-webfont.eot");
+  src: url("../fonts/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto light';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotolight italic';
+  src: url("../fonts/roboto-lightitalic-webfont.eot");
+  src: url("../fonts/roboto-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-lightitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto medium';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto medium italic';
+  src: url("../fonts/roboto-mediumitalic-webfont.eot");
+  src: url("../fonts/roboto-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto regular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto thin';
+  src: url("../fonts/roboto-thin-webfont.eot");
+  src: url("../fonts/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotothin italic';
+  src: url("../fonts/roboto-thinitalic-webfont.eot");
+  src: url("../fonts/roboto-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-thinitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-thinitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+body {
+  font-family: 'montserrat bold';
+  font-size: 14px;
+}
+
+.main__container {
+  padding: 0 10px;
+  max-width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cont__title {
+  font-size: 22px;
+  margin: 35px 0 20px;
+}
+
+@media screen and (min-width: 450px) {
+  .cont__title {
+    margin: 90px 0 35px;
+  }
+}
+
+.btn-default {
+  width: 275px;
+  padding: 10px 25px;
+  border: 0;
+  background: #ff4e50;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  behavior: url("css/pie.htc");
+  color: #fff;
+  font-family: 'montserrat bold';
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 450px) {
+  .btn-default {
+    width: auto;
+  }
+}
+
+.main__underscore {
+  height: 3px;
+  margin-top: 40px;
+  background: #ff4e50;
+}
+
+@media screen and (min-width: 450px) {
+  .main__underscore {
+    margin-top: 90px;
+  }
+}
+
+.site-header {
+  position: relative;
+  padding: 25px 0 135px;
+  background: url(../img/header_bcg.png) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+  z-index: 1;
+}
+
+.site-header a {
+  display: inline-block;
+  color: inherit;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.site-header h3 {
+  margin-top: 120px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header h3 {
+    margin-top: 18px;
+    float: left;
+  }
+}
+
+.site-header h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header h1 {
+    margin-top: 220px;
+  }
+}
+
+.site-header p {
+  margin-top: 28px;
+  margin-bottom: 60px;
+  font-family: 'roboto light';
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header {
+    padding-bottom: 230px;
+  }
+}
+
+.site-header__reg a {
+  padding: 10px 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__reg {
+    margin-top: 10px;
+    float: right;
+  }
+}
+
+.site-header__reg--sign-up {
+  border: 2px solid #fff;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  behavior: url("css/pie.htc");
+}
+
+.lSSlideOuter {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 620px) {
+  .lSSlideOuter {
+    width: 32%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .lSSlideOuter:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider__item {
+  position: relative;
+  color: #fff;
+  text-align: left;
+}
+
+.slider__item img {
+  width: 100%;
+}
+
+@media screen and (max-width: 620px) {
+  .slider__item img {
+    height: 340px;
+  }
+}
+
+.slider__content {
+  position: absolute;
+  bottom: 0;
+  padding: 17px 20px;
+  z-index: 1;
+}
+
+.slider__content--mark, .slider__content--text {
+  font-family: 'roboto light';
+}
+
+.slider__content--mark {
+  display: inline-block;
+  padding: 6px 12px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  behavior: url("css/pie.htc");
+  background: #ff4e50;
+  font-size: 10px;
+}
+
+.slider__content--title {
+  font-size: 24px;
+}
+
+.slider__content--text {
+  font-size: 14px;
+}
+
+.lSAction > a {
+  position: absolute;
+  width: 30px;
+  height: 55px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 678px) {
+  .lSAction > a {
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .lSAction > a {
+    top: 46%;
+    top: -webkit-calc(50% - 30px);
+    top: calc(50% - 30px);
+  }
+}
+
+.lSAction > .lSPrev {
+  left: 20px;
+  background-image: url(../img/icons.png);
+  background-position: -82px 0px;
+  width: 30px;
+  height: 55px;
+}
+
+.lSAction > .lSNext {
+  right: 20px;
+  background-image: url(../img/icons.png);
+  background-position: -112px 0px;
+  width: 30px;
+  height: 55px;
+}
+
+.slider__gag {
+  display: none;
+}
+
+@media screen and (min-width: 620px) {
+  .slider__gag {
+    display: block;
+    width: 2%;
+    height: 1px;
+    float: left;
+  }
+}
+
+.partner__cont {
+  font-size: 0;
+}
+
+.partner__item {
+  display: inline-block;
+  padding: 0 40px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 450px) {
+  .partner__item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .partner__item {
+    width: 25%;
+  }
+}
+
+.partner__item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.partner__img {
+  position: relative;
+  width: 121px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+
+.partner__name {
+  margin-bottom: 15px;
+}
+
+.partner__text {
+  color: #666;
+  font-family: 'roboto light';
+}
+
+.partner__img--sub {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.partner__img--sub-1 {
+  background-image: url(../img/icons.png);
+  background-position: 0px 0px;
+  width: 41px;
+  height: 41px;
+}
+
+.partner__img--sub-2 {
+  background-image: url(../img/icons.png);
+  background-position: -41px -41px;
+  width: 41px;
+  height: 40px;
+}
+
+.partner__img--sub-3 {
+  background-image: url(../img/icons.png);
+  background-position: -41px 0px;
+  width: 41px;
+  height: 41px;
+}
+
+.partner__img--sub-4 {
+  background-image: url(../img/icons.png);
+  background-position: 0px -41px;
+  width: 41px;
+  height: 41px;
+}
+
+.partner__search {
+  margin-top: 10px;
+  padding: 10px 70px;
+  border: 2px solid #ff4e50;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  behavior: url("css/pie.htc");
+  background: #fff;
+  color: #ff4e50;
+  font-family: 'montserrat bold';
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.act__sub {
+  margin-bottom: 15px;
+  color: #666;
+  font-family: 'roboto light';
+  font-size: 18px;
+}
+
+.act__form input {
+  width: 275px;
+  margin-bottom: 8px;
+  padding: 8px;
+  padding-left: 15px;
+  border: 1px solid #999;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  outline: none;
+  behavior: url("css/PIE.htc");
+  color: #999;
+  font-family: 'roboto light';
+}
+
+@media screen and (min-width: 450px) {
+  .act__form input {
+    width: 240px;
+    margin-right: 10px;
+  }
+}
+
+.masonry__cont {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+
+.masonry__cont img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  behavior: url(css/PIE.htc);
+}
+
+.masonry__cont-1 {
+  width: 100%;
+  height: 160px;
+}
+
+@media screen and (min-width: 450px) {
+  .masonry__cont-1 {
+    width: 33.3%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .masonry__cont-2 {
+    width: 66.6%;
+  }
+}
+
+.masonry__text {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 160px;
+}
+
+@media screen and (min-width: 450px) {
+  .masonry__text {
+    line-height: 300px;
+  }
+}
+
+.box1 {
+  width: 33.3%;
+  height: 150px;
+  background: #f00;
+  border: 5px solid #fff;
+}
+
+.box2 {
+  width: 66.6%;
+  height: 150px;
+  background: #ff0;
+  border: 5px solid #fff;
+}
+
+.site-footer {
+  padding: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer {
+    text-align: left;
+  }
+}
+
+.site-footer__title {
+  margin-bottom: 15px;
+  color: #ff4e50;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer__title {
+    display: inline-block;
+    margin-right: 75px;
+    vertical-align: top;
+  }
+}
+
+.site-footer__nav {
+  margin-bottom: 10px;
+}
+
+.site-footer__nav li {
+  display: inline-block;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer__nav li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}
+
+.site-footer__nav li a {
+  color: #666;
+  font-family: 'roboto light';
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer__nav {
+    display: inline-block;
+    margin-right: 75px;
+    vertical-align: top;
+  }
+}
+
+.site-footer__nav--title {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer__nav--title {
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: top;
+  }
+}
+
+.site-footer__logo {
+  margin-top: 15px;
+}
+
+.site-footer__logo span {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.site-footer__logo a {
+  display: block;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer__logo {
+    display: inline-block;
+    margin-top: 0;
+    float: right;
+    vertical-align: top;
+  }
+}

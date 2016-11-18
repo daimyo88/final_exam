@@ -1,0 +1,61 @@
+.partner__cont
+  font-size: 0
+
+
+.partner__item
+  display: inline-block
+  padding: 0 40px
+  margin-bottom: 25px
+  font-size: 14px
+  vertical-align: top
+  @media screen and(min-width:450px)
+    width: 50%
+  @media screen and(min-width:960px)
+    width: 25%
+  a
+    text-decoration: none
+    color: #000
+
+
+.partner__img
+  position: relative
+  width: 121px
+  margin: 0 auto
+  margin-bottom: 13px
+
+.partner__name
+  margin-bottom: 15px
+
+.partner__text
+  color: #666
+  font-family: 'roboto light'
+
+.partner__img--sub
+  position: absolute
+  right: 0
+  bottom: 0
+
+.partner__img--sub-1
+  @include sprite($partner_sub1)
+
+.partner__img--sub-2
+  @include sprite($partner_sub2)
+
+.partner__img--sub-3
+  @include sprite($partner_sub3)
+
+.partner__img--sub-4
+  @include sprite($partner_sub4)
+
+.partner__search
+  margin-top: 10px
+  padding: 10px 70px
+  border: 2px solid $bright-main
+  border-radius: 20px
+  behavior: url("css/pie.htc")
+  background: #fff
+  color: $bright-main
+  font-family: 'montserrat bold'
+  font-size: 14px
+  cursor: pointer
+  outline: none
