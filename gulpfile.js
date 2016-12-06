@@ -77,7 +77,7 @@ gulp.task('compress', function (cb) {
   pump([
         gulp.src('prod/js/*.js'),
         uglify(),
-        gulp.dest('prod/js')
+        gulp.dest('prod/js/')
     ],
     cb
   );
@@ -90,9 +90,9 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('scripts', function () {
-  return gulp.src('dev/js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('prod/js'));
+  return gulp.src('dev/js/libs/*.js')
+    .pipe(concat('vendors.js'))
+    .pipe(gulp.dest('prod/js/'));
 });
 
 gulp.task('default', ['watch']);
